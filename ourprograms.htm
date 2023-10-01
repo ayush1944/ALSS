@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Classical Dance Group</title>
+    <style>
+        /* Styling for the body */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styling for the header */
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Styling for the main content */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for the program details */
+        .program-details {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* Styling for the program title */
+        #programTitle {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Styling for the highlights */
+        .highlights {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .highlight-item {
+            margin-bottom: 10px;
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for the photo gallery */
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .photo {
+            flex: 0 0 calc(33.33% - 20px);
+            max-width: calc(33.33% - 20px);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .photo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Styling for the footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Animation for the header */
+        header h1 {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Animation for program details */
+        .program-details {
+            animation: slideIn 1s ease-in-out;
+        }
+
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>हमारे कार्यक्रम </h1>
+    </header>
+
+    <div class="content">
+        <h2>Upcoming Program: <span id="programTitle">Summer Showcase 2023</span></h2>
+        <p class="program-details">
+            Join us for a mesmerizing evening of classical dance as we present our Summer Showcase 2023.
+            <br>
+            Date: <span id="programDate">July 15, 2023</span><br>
+            Time: <span id="programTime">7:00 PM</span><br>
+            Venue: <span id="programVenue">The Grand Theater</span><br>
+        </p>
+
+        <h3>Program Highlights</h3>
+        <ul class="highlights">
+            <li class="highlight-item">Classical Dance Performances</li>
+            <li class="highlight-item">Solo and Group Acts</li>
+            <li class="highlight-item">Traditional Costumes</li>
+            <li class="highlight-item">Live Music</li>
+            <li class="highlight-item">And More!</li>
+        </ul>
+
+        <h3>Our Past Programs</h3>
+        <ul class="highlights">
+            <li class="highlight-item">Spring Elegance 2022</li>
+            <li class="highlight-item">Winter Enchantment 2021</li>
+            <li class="highlight-item">Autumn Rhythms 2021</li>
+            <li class="highlight-item">Summer Splendor 2020</li>
+            <li class="highlight-item">Spring Sonata 2020</li>
+        </ul>
+    </div>
+
+    <div class="photo-gallery">
+        <div class="photo">
+            <img src="image1.jpg" alt="Program Photo 1">
+        </div>
+        <div class="photo">
+            <img src="image2.jpg" alt="Program Photo 2">
+        </div>
+        <div class="photo">
+            <img src="image3.jpg" alt="Program Photo 3">
+        </div>
+    </div>
+
+
+
+    <script>
+        // JavaScript for dynamically updating program details
+        const programData = {
+            title: "Summer Showcase 2023",
+            date: "July 15, 2023",
+            time: "7:00 PM",
+            venue: "The Grand Theater"
+        };
+
+        // Update program details on the page
+        document.getElementById("programTitle").textContent = programData.title;
+        document.getElementById("programDate").textContent = programData.date;
+        document.getElementById("programTime").textContent = programData.time;
+        document.getElementById("programVenue").textContent = programData.venue;
+    </script>
+    <footer>
+        &copy; अवधी लोक समूह समिति
+    </footer>
+</body>
+</html>
+ 

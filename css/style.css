@@ -1,0 +1,18 @@
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0 0 0);
+    font-weight: 500;
+}
+/* Example CSS for styling the "Read More" link */
+a {
+    text-decoration: none;
+    background-color: #bdcad7;
+    color: #fff;
+    padding: 50px 50px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  a:hover {
+    background-color: #005bb8;
+  }
+  
